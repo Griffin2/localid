@@ -7,11 +7,90 @@
   let copied = $state(false);
   let copiedField = $state("");
 
-  const FIRST_NAMES_M = ["James","Robert","Michael","William","David","Richard","Joseph","Thomas","Daniel","Matthew","Andrew","Joshua","Christopher","Nathan","Ryan","Kevin","Brian","Eric","Patrick","Sean"];
-  const FIRST_NAMES_F = ["Mary","Patricia","Jennifer","Linda","Sarah","Jessica","Emily","Hannah","Ashley","Megan","Rachel","Olivia","Samantha","Lauren","Nicole","Amber","Sophia","Grace","Chloe","Natalie"];
-  const LAST_NAMES = ["Smith","Johnson","Williams","Brown","Jones","Garcia","Miller","Davis","Rodriguez","Martinez","Wilson","Anderson","Thomas","Jackson","White","Harris","Clark","Lewis","Young","Walker"];
-  const STREETS = ["Oak","Maple","Cedar","Pine","Elm","Main","Park","Lake","Hill","Sunset","River","Forest","Meadow","Spring","Valley"];
-  const STREET_TYPES = ["St","Ave","Blvd","Dr","Ln","Rd","Way","Ct"];
+  const FIRST_NAMES_M = [
+    "James",
+    "Robert",
+    "Michael",
+    "William",
+    "David",
+    "Richard",
+    "Joseph",
+    "Thomas",
+    "Daniel",
+    "Matthew",
+    "Andrew",
+    "Joshua",
+    "Christopher",
+    "Nathan",
+    "Ryan",
+    "Kevin",
+    "Brian",
+    "Eric",
+    "Patrick",
+    "Sean",
+  ];
+  const FIRST_NAMES_F = [
+    "Mary",
+    "Patricia",
+    "Jennifer",
+    "Linda",
+    "Sarah",
+    "Jessica",
+    "Emily",
+    "Hannah",
+    "Ashley",
+    "Megan",
+    "Rachel",
+    "Olivia",
+    "Samantha",
+    "Lauren",
+    "Nicole",
+    "Amber",
+    "Sophia",
+    "Grace",
+    "Chloe",
+    "Natalie",
+  ];
+  const LAST_NAMES = [
+    "Smith",
+    "Johnson",
+    "Williams",
+    "Brown",
+    "Jones",
+    "Garcia",
+    "Miller",
+    "Davis",
+    "Rodriguez",
+    "Martinez",
+    "Wilson",
+    "Anderson",
+    "Thomas",
+    "Jackson",
+    "White",
+    "Harris",
+    "Clark",
+    "Lewis",
+    "Young",
+    "Walker",
+  ];
+  const STREETS = [
+    "Oak",
+    "Maple",
+    "Cedar",
+    "Pine",
+    "Elm",
+    "Main",
+    "Park",
+    "Lake",
+    "Hill",
+    "Sunset",
+    "River",
+    "Forest",
+    "Meadow",
+    "Spring",
+    "Valley",
+  ];
+  const STREET_TYPES = ["St", "Ave", "Blvd", "Dr", "Ln", "Rd", "Way", "Ct"];
   const CITIES = [
     { city: "Austin", state: "TX", zip: "787" },
     { city: "Portland", state: "OR", zip: "972" },
@@ -26,9 +105,45 @@
     { city: "San Diego", state: "CA", zip: "921" },
     { city: "Minneapolis", state: "MN", zip: "554" },
   ];
-  const DOMAINS = ["gmail.com","yahoo.com","outlook.com","proton.me","icloud.com","mail.com"];
-  const JOBS = ["Software Engineer","Product Manager","Designer","Analyst","Consultant","Teacher","Nurse","Writer","Accountant","Architect","Marketing Manager","Sales Representative","Data Scientist","Project Manager","Mechanic"];
-  const COMPANIES = ["Acme Corp","Globex Inc","Initech","Umbrella Co","Stark Industries","Wayne Enterprises","Cyberdyne","Soylent Corp","Hooli","Pied Piper","Vandelay Industries","Prestige Worldwide"];
+  const DOMAINS = [
+    "gmail.com",
+    "yahoo.com",
+    "outlook.com",
+    "proton.me",
+    "icloud.com",
+    "mail.com",
+  ];
+  const JOBS = [
+    "Software Engineer",
+    "Product Manager",
+    "Designer",
+    "Analyst",
+    "Consultant",
+    "Teacher",
+    "Nurse",
+    "Writer",
+    "Accountant",
+    "Architect",
+    "Marketing Manager",
+    "Sales Representative",
+    "Data Scientist",
+    "Project Manager",
+    "Mechanic",
+  ];
+  const COMPANIES = [
+    "Acme Corp",
+    "Globex Inc",
+    "Initech",
+    "Umbrella Co",
+    "Stark Industries",
+    "Wayne Enterprises",
+    "Cyberdyne",
+    "Soylent Corp",
+    "Hooli",
+    "Pied Piper",
+    "Vandelay Industries",
+    "Prestige Worldwide",
+  ];
 
   function rand(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
@@ -114,7 +229,7 @@
   });
 </script>
 
-<TrustBar sourceUrl="https://github.com/user/localid" />
+<TrustBar sourceUrl="https://github.com/Griffin2/localid" />
 
 <div class="page-shell">
   <ToolHeader
@@ -155,7 +270,8 @@
   </div>
 
   <div class="disclaimer">
-    For testing, development, and form-filling only. All data is randomly generated in your browser — no real identities are used or stored.
+    For testing, development, and form-filling only. All data is randomly
+    generated in your browser — no real identities are used or stored.
   </div>
 
   <ToolFooter />
